@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Noticias</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-zinc-200">
+    <header class="bg-white w-full h-36 flex align-middle justify-center">
+        <div class="w-4/5 h-16 flex justify-between mt-auto mb-auto">
+
+            <img src="./midia/formula1-logo.png" class="w-64" alt="Logo">
+
+            <ul class="hidden md:flex align-middle ml-6">
+                <li class="text-black mr-8 mt-auto mb-auto font-bold text-2xl hover:opacity-50 transition-all">Come</li>
+                <li class="text-black mr-8 mt-auto mb-auto font-bold text-2xl hover:opacity-50 transition-all">Postagens
+                </li>
+                <li class="text-black mt-auto mb-auto font-bold text-2xl hover:opacity-50 transition-all">Contato</li>
+            </ul>
+            <div class="md:hidden flex items-center justify-center">
+                <button id="menuButton" class="text-black text-2xl focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="flex-col">
+        <ul id="mobileMenu"
+            class="md:hidden space-y-4 text-blue-300 text-xl px-4 py-2 bg-gray-700 items-center justify-center hidden transition-all">
+            <li class="hover:text-blue-500">home</li>
+            <li class="hover:text-blue-500">postagens</li>
+            <li class="hover:text-blue-500">contato</li>
+        </ul>
+    </div>
+    <div class="w-4/5 m-auto">
+        <div id="post" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+
+    <footer class=" bg-white flex flex-col md:flex-row justify-center items-center bg-black-300 py-6 md:py-4 lg:py-8">
+
+    </footer>
+
+    <script src="post.js"></script>
+</body>
+
+</html>
